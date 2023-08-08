@@ -3,7 +3,7 @@
 import Button from "@/app/components/Button";
 import Input from "@/app/components/inputs/Input";
 import AuthSocialButton from "./AuthSocialButton";
-import { BsGithub, BsGoogle } from "react-icons/bs";
+import { BsGithub, BsGoogle, BsFacebook } from "react-icons/bs";
 import { useCallback, useEffect, useState } from "react";
 import { useForm, FieldValues, SubmitHandler } from "react-hook-form";
 import axios from "axios";
@@ -181,6 +181,10 @@ const AuthForm = () => {
             <AuthSocialButton
               icon={BsGoogle}
               onClick={() => socialAction("google")}
+            />
+            <AuthSocialButton
+              icon={BsFacebook}
+              onClick={() => socialAction("facebook")}
             />
           </div>
         </div>
