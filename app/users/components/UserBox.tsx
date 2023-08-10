@@ -29,7 +29,7 @@ const UserBox: React.FC<UserBoxProps> = ({ data }) => {
   }, [data, router]);
   return (
     <>
-      <LoadingModal />
+      {isLoading && <LoadingModal />}
       <div
         onClick={handleClick}
         className="
